@@ -43,8 +43,8 @@ function getHumWep(e) {
             displayResults(humWeapon, compWeapon, 'tie')
             displayPoints(humPoints, comPoints, tiePoints)
         } else if (humWeapon === 'rock' && compWeapon === 'scissors' ||
-        humWeapon === 'paper' && compWeapon === 'rock' ||
-        humWeapon === 'scissors' && compWeapon === 'paper') {
+            humWeapon === 'paper' && compWeapon === 'rock' ||
+            humWeapon === 'scissors' && compWeapon === 'paper') {
             humPoints++;
             displayResults(humWeapon, compWeapon, 'hum')
             displayPoints(humPoints, comPoints, tiePoints);
