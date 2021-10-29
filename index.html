@@ -7,29 +7,45 @@
     <title>RPS</title>
     <script src = "rps.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>THE COMPUTER WANTS TO PLAY ROCK PAPER SCISSORS WITH YOU!</h1>
-    <h2>BEST OUT OF 5 WINS!!</h2>
-    <h2 class="messageBoard">GOOD LUCK!!!</h2>
-    <div class='scoreboard'>
-        <div class='points humPoints'>HUMAN: 0</div>
-        <div class='points tiePoints'>TIES: 0</div>
-        <div class='points compPoints'>COMP: 0</div>
+    <div class='theGame'>
+        <h1>THE COMPUTER WANTS TO PLAY ROCK PAPER SCISSORS WITH YOU!</h1>
+        <h2>FIRST TO 5 WINS!!</h2>
+        <h2 class="messageBoard">GOOD LUCK!!!</h2>
+        <div class='scoreboard'>
+            <div class='points humPoints'>HUMAN: 0</div>
+            <div class='points tiePoints'>TIES: 0</div>
+            <div class='points compPoints'>COMP: 0</div>
+            <div class='points gamePoints'>GAMES: 0</div>
+        </div>
+        <div class="weapons">
+            <div class="weapon rock" id='rock'>
+                <img src="images/rock2.png" alt="a rock" id='rock'>
+                <p id="rock">ROCK</p>
+            </div>
+            <div class="weapon paper" id='paper'>
+                <img src="images/paper2.png" alt="a paper" id="paper">
+                <p id="paper">PAPER</p>
+            </div>
+            <div class="weapon scissors" id="scissors">
+                <img src="images/scissors2.png" alt="a scissor" id="scissors">
+                <p id="scissors">SCISSORS</p>
+            </div>
+        </div>
     </div>
-    <div class="weapons">
-        <div class="weapon rock" id='rock'>
-            <img src="images/rock2.png" alt="a rock" id='rock'>
-            <p id="rock">ROCK</p>
+    <div class='playAgain'>
+        <h1>GAME OVER</h1>
+        <h2 class="winnerMessage"></h2>
+        <h2>WOULD YOU LIKE TO PLAY AGAIN?</h2>
+        <div>
+            <button id='yes'>YES</button>
+            <button id='no'>NO</button>
         </div>
-        <div class="weapon paper" id='paper'>
-            <img src="images/paper2.png" alt="a paper" id="paper">
-            <p id="paper">PAPER</p>
-        </div>
-        <div class="weapon scissors" id="scissors">
-            <img src="images/scissors2.png" alt="a scissor" id="scissors">
-            <p id="scissors">SCISSORS</p>
-        </div>
+    </div>
+    <div class='thanks'>
+        <h1>THANKS FOR PLAYING!!</h1>
     </div>
 </body>
 </html>

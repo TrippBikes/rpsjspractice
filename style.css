@@ -1,5 +1,5 @@
 html {
-    background: grey;
+    background: Black;
     -webkit-user-select: none;
 }
 
@@ -7,7 +7,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: VT323;
 }
 
 h1 {
@@ -19,33 +19,37 @@ h2 {
 }
 
 h1,
-h2 {
+h2, .points {
+    font-weight: lighter;
     text-align: center;
+    color:limegreen;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .scoreboard {
+    margin-top: 5em;
     display: flex;
-    background: orange;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
 
 .points {
-    height: 30px;
-    width: 130px;
-    min-width: 130px;
-    font-size: 25px;
-    font-weight: bold;
+    height: 3em;
+    width: 5em;
+    font-size: 2em;
     margin-left: 50px;
     margin-right: 50px;
 }
+
 
 .weapons {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -56,13 +60,12 @@ img {
 
 .weapon {
     background: green;
-    height: 150px;
-    width: 150px;
-    margin: 40px;
+    height: 6em;
+    width: 6em;
+    margin: 2em;
     text-align: center;
-    border: 5px solid darkgreen;
-    border-radius: 15px;
-    transition: all .1s ease;
+    border: .5em solid darkgreen;
+    transition: all .05s ease;
 }
 
 .paper {
@@ -71,12 +74,30 @@ img {
 
 .weapon:hover {
     background: lightgreen;
-    border: 5px solid lime;
-    box-shadow: 0px 0px 40px 20px hotpink;
+    border: .5em solid lime;
+    box-shadow: 0px 0px 2em .1em greenyellow;
 }
 
 .weapon:active {
-    background: white;
-    box-shadow: 0px 0px 80px 40px hotpink;
-    ;
+    background: rgb(166, 245, 166);
+    box-shadow: 0px 0px 2.5em .2em greenyellow;
+}
+
+.playAgain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: grey;
+    color: limegreen;
+    font-family: VT323;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.displayMeNot {
+    display: none;
 }
